@@ -52,6 +52,7 @@
 
   View.prototype.stop = function() {
     clearTimeout(this.timeId)
-    alert("You lost!")
+    document.getElementById('game-status').innerHtml('You lost!')
+    // alert("You lost!")
   };
 })();
